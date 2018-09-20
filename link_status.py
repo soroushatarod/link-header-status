@@ -51,7 +51,7 @@ class LinkHeaderStatus:
 
 
 def main():
-    parser = argparse.ArgumentParser('python hello.py https://www.example.com #menu-main-menu li a')
+    parser = argparse.ArgumentParser('python link_status.py https://www.example.com "#menu-main-menu li a"')
     parser.add_argument("link", help="the website URL", type=str)
     parser.add_argument("css_selector", help="the css selector to crawl the links", type=str)
     args = parser.parse_args()
