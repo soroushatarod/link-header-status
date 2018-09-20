@@ -38,7 +38,7 @@ class LinkHeaderStatus:
     def is_status_code_valid(self, links):
 
         for link, status in links.items():
-            if status not in [200, 300]:
+            if status not in [200, 300, 301, 302, 303]:
                 print(link)
                 exit(1)
 
